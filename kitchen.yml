@@ -1,0 +1,15 @@
+provisioner:
+  name: terraform
+  directory: test
+  root_module_directory: modules
+
+verifier:
+  name: terraform
+  # variable_files:
+  #  - test/variables.tfvars
+  # variables:
+  #   access_key: <%= ENV['AWS_ACCESS_KEY_ID'] %>
+  #   secret_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
+
+suites:
+  - name: project_test
